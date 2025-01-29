@@ -10,7 +10,7 @@
     <!-- Cabeçalho da página -->
     <header>
         <h1>Barbearia do Bruno</h1>
-        <p>Aceitamos cartoes de credito e pix!</p>
+        <p>Aceitamos cartões de crédito e pix!</p>
     </header>
 
     <!-- Seção principal do site -->
@@ -76,6 +76,79 @@
                     <td>R$ 70,00</td>
                 </tr>
             </table>
+        </section>
+
+        <!-- Incorporação de APIs -->
+        <section id="apis">
+            <h2>Conteúdos Externos</h2>
+            <div class="api-container">
+                <!-- YouTube -->
+                <div class="api-item">
+                    <h3>YouTube</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <!-- Google Maps -->
+                <div class="api-item">
+                    <h3>Google Maps</h3>
+                    <iframe width="100%" height="315" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0754267452926!2d-46.65342658502229!3d-23.565734367638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1623861234567!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                </div>
+
+                <!-- Twitter -->
+                <div class="api-item">
+                    <h3>Twitter</h3>
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Example tweet text here.</p>&mdash; Twitter (@Twitter) <a href="https://twitter.com/Twitter/status/1234567890123456789?ref_src=twsrc%5Etfw">Month Day, Year</a></blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+
+                <!-- Instagram -->
+                <div class="api-item">
+                    <h3>Instagram</h3>
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CABCDEFGHIJ/" data-instgrm-version="13" style="width:100%;"></blockquote>
+                    <script async src="//www.instagram.com/embed.js"></script>
+                </div>
+
+                <!-- Spotify -->
+                <div class="api-item">
+                    <h3>Spotify</h3>
+                    <iframe src="https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+
+                <!-- Facebook -->
+                <div class="api-item">
+                    <h3>Facebook</h3>
+                    <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v12.0" nonce="XYZ123"></script>
+                    <div class="fb-post" data-href="https://www.facebook.com/facebook/posts/10158925190446729" data-width="500" data-show-text="true"></div>
+                </div>
+
+                <!-- Google Calendar -->
+                <div class="api-item">
+                    <h3>Google Calendar</h3>
+                    <iframe src="https://calendar.google.com/calendar/embed?src=example%40group.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+                </div>
+
+                <!-- Google Forms -->
+                <div class="api-item">
+                    <h3>Google Forms</h3>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfA3X3X3X3X3X3X3X3X3X3X3X3X3X3X3X3X3X3X3X3X3X3X3X3X3/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                </div>
+
+                <!-- Disqus -->
+                <div class="api-item">
+                    <h3>Comentários</h3>
+                    <div id="disqus_thread"></div>
+                    <script>
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://exemplo.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </div>
+            </div>
         </section>
     </main>
 

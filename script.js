@@ -39,6 +39,6 @@ document.getElementById('enviarWhatsApp').addEventListener('click', function() {
     }
 
     const mensagem = `Olá, gostaria de agendar um horário:\nNome: ${nome}\nData: ${data}\nHora: ${hora}\nServiços: ${servicos.join(', ')}\nForma de Pagamento: ${pagamento}`;
-    const url = `https://wa.me/5511999999999?text=${encodeURIComponent(mensagem)}`;
+    const url = `https://wa.me/5521998371328?text=${encodeURIComponent(mensagem)}`;
     window.open(url, '_blank');
 });

@@ -1,182 +1,263 @@
-/* Reset básico */
+/* 🎨 Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* 🌍 Corpo do documento */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #3f2713c5;
-    color: #333;
+    background-color: #5a3e2b; /* Marrom escuro */
+    color: #332a22;
     padding: 20px;
+    transition: background 0.3s ease-in-out;
 }
 
+/* 🏠 Cabeçalho */
 header {
-    background-color: #333;
+    background-color: #3b2a1a; /* Marrom café */
     color: #fff;
-    padding: 20px 0;
+    padding: 25px 0;
     text-align: center;
+    border-bottom: 6px solid #c29f7e; /* Marrom areia */
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1.2px;
+}
+
+header:hover {
+    background-color: #4a3222;
+    border-bottom-color: #d2b48c; /* Bege tostado */
 }
 
 header h1 {
     margin-bottom: 10px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e0c9a6; /* Marrom claro */
 }
 
+/* 📌 Layout principal */
 main {
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f5a768a1;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #c29f7e;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
 
+main:hover {
+    transform: scale(1.03);
+}
+
+/* 🔹 Seções gerais */
 section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-left: 6px solid #3b2a1a;
+    background-color: #e3c3a1;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+section:hover {
+    background-color: #d4a375;
 }
 
 h2 {
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 25px;
+    color: #3b2a1a;
+    font-size: 2rem;
+    border-bottom: 4px solid #5a3e2b;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* 📝 Formulários */
+form {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 form label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-weight: bold;
+    color: #4a3222;
 }
 
 form input[type="text"],
 form input[type="date"],
 form input[type="time"] {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 14px;
+    margin-bottom: 25px;
+    border: 2px solid #a57c55;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    background-color: #f5e0c3;
 }
 
-form input[type="checkbox"] {
-    margin-right: 10px;
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form input[type="time"]:focus {
+    border-color: #5a3e2b;
+    outline: none;
+    box-shadow: 0 0 10px rgba(90, 62, 43, 0.5);
 }
 
 form button {
-    padding: 10px 20px;
-    background-color: #333;
+    padding: 14px 28px;
+    background-color: #3b2a1a;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    margin-right: 10px;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #5a3e2b;
+    transform: scale(1.07);
 }
 
-#total {
-    font-size: 1.2em;
-    margin: 20px 0;
-    font-weight: bold;
-}
-
+/* 🖼️ Galeria de Imagens */
 .imagens {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 15px;
 }
 
 .imagens img {
     width: 30%;
-    margin-bottom: 20px;
-    border-radius: 8px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 4px solid #fff;
 }
 
+.imagens img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+    border-color: #5a3e2b;
+}
+
+/* 📊 Tabela */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    background-color: #f5e0c3;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-table th, table td {
-    padding: 10px;
-    border: 1px solid #ccc;
+table th, 
+table td {
+    padding: 14px;
+    border: 1px solid #a57c55;
     text-align: left;
 }
 
 table th {
-    background-color: #333;
+    background-color: #3b2a1a;
     color: #fff;
+    text-transform: uppercase;
 }
 
+table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* 📡 API Container */
 .api-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
 }
 
 .api-item {
-    flex: 1 1 calc(33.333% - 20px);
-    background-color: #834e236c;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 25px);
+    background-color: #a57c55;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
-.api-item iframe {
-    width: 100%;
-    border: none;
+.api-item:hover {
+    transform: translateY(-8px);
 }
 
+/* 📌 Barra Lateral */
 aside {
-    background-color: #333;
+    background-color: #3b2a1a;
     color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease-in-out;
 }
 
-aside h3 {
-    margin-bottom: 10px;
+aside:hover {
+    transform: scale(1.05);
 }
 
-aside ul {
-    list-style-type: none;
-}
-
-aside ul li {
-    margin-bottom: 10px;
-}
-
+/* 📌 Rodapé */
 footer {
     text-align: center;
-    padding: 20px 0;
-    background-color: #333;
+    padding: 25px 0;
+    background-color: #3b2a1a;
     color: #fff;
-    border-radius: 8px;
-    margin-top: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 1.3rem;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* 📱 Responsividade */
+@media (max-width: 1024px) {
     .imagens img {
         width: 48%;
     }
 
     .api-item {
-        flex: 1 1 100%;
+        flex: 1 1 48%;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .imagens img {
         width: 100%;
     }
 
+    .api-item {
+        flex: 1 1 100%;
+    }
+
     form button {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .imagens img {
+        width: 100%;
     }
 }

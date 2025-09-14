@@ -1,7 +1,3 @@
-Perfeito 👌 então vou montar o README.md bilíngue: primeiro em Português, depois em Inglês, tudo no mesmo arquivo e bem organizado. Assim qualquer pessoa que acessar o repositório consegue entender.
-
-Aqui está:
-
 # 💈 Barbearia do Bruno - Sistema de Agendamento | Barber Shop Booking System
 
 Este projeto é um site de **agendamento online para barbearia**, desenvolvido com **HTML, CSS e JavaScript**.  
